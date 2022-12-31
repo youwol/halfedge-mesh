@@ -8,10 +8,14 @@ See https://github.com/CMU-Graphics/Scotty3D for more information.
 ## API
 ```ts
 /**
- * Get the borders of the mesh. For the moment, we return
+ * Get the borders of the mesh. For the moment. Return
  * paire of vertices (x,y,z) to define an edge
  */
-borders(positions: number[], indices: number[]): number[]
+const borderPositions = borders(positions: number[], indices: number[]): number[]
+
+const nodeIds = borderIds(positions: number[], indices: number[]): number[]
+
+const newPositions = relax(positions: number[], indices: number[], nbIter: number): number[]
 ```
 
 ## Usage
